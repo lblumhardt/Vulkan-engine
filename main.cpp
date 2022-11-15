@@ -219,8 +219,8 @@ private:
 		//GLFW was intended for use with OpenGL, so this will tell it not to init an OpenGL contex
 		glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
 		
-		//Disable window resize
-		glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+		//Enable window resize
+		glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
 
 		window = glfwCreateWindow(WIDTH, HEIGHT, "Vulkan", nullptr, nullptr);
 		glfwSetWindowUserPointer(window, this);
